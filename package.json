@@ -1,0 +1,22 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "construction du site ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClementSeemann/Projet3.git"
+  },
+  "author": "Clement Seemann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClementSeemann/Projet3/issues"
+  },
+  "homepage": "https://github.com/ClementSeemann/Projet3#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
