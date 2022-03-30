@@ -1,35 +1,13 @@
 
 @import "./utils/mixins.scss";
 @import "./base/typography.scss";
-@import "./components/button.scss";
+@import "./components/explorer_button.scss";
 @import "./layouts/header.scss";
+@import "./layouts/belleville.scss";
 @import "./pages/menu1.scss";
 @import "./themes/theme1.scss";
 
-/*Main*/
-.belleville{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    background-color: #F3F3F3;
-    text-align: center;
-    padding: 0.5rem;
-}
-.search{ 
-    text-align: center;
-    margin-top: 1.5rem;
-}
-.search_button{
-    background-image: linear-gradient(#FF79DA, #9356DC);
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 2px 1px 8px -3px black;
-}
-.search_button:hover{
-    scale: 1.03;
-}
+
+
+
+
