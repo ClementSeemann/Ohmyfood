@@ -1,17 +1,21 @@
+@import "../utils/boxshadow.scss";
+@import "../utils/zoomhover.scss";
+@import "../utils/colors.scss";
 .search{ 
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 24px;
+    background-color: $grey;
     & button{
-        background-image: linear-gradient(#FF79DA, #9356DC);
+        background-image: linear-gradient($pink, $purple);
         color: white;
         font-weight: bold;
-        font-size: 1rem;
-        padding: 1rem 2rem;
+        font-size: 16px;
+        padding: 16px 32px;
         border: none;
         border-radius: 30px;
-        box-shadow: 2px 1px 8px -3px black;
-        & :hover{
-            scale: 1.03;
+        @include shadow;
+        &:hover{
+            @include zoomhover
         }
     }
     

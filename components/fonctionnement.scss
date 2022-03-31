@@ -1,0 +1,26 @@
+@import "../utils/boxshadow.scss";
+@import "../utils/zoomhover.scss";
+@import "../utils/colors.scss";
+.fonctionnement{
+    & ol{
+        display: flex;
+        gap: 15px;
+        @media (max-width: 800px){
+            flex-direction: column;
+        }
+    }
+    & li{
+        background-color: $grey;
+        padding: 18px 32px;
+        flex-grow: 1;
+        border: 1px solid $grey;
+        border-radius: 15px;
+        @include shadow;
+        &:hover{
+            @include zoomhover;
+        }
+        & i{
+            margin-right: 15px;
+        }
+    }
+}

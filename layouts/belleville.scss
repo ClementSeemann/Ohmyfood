@@ -1,9 +1,10 @@
+@import "../utils/colors.scss";
 .belleville{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    background-color: #F3F3F3;
+    gap: 16px;
+    background-color: $greyhard;
     text-align: center;
-    padding: 0.5rem;
+    padding: 8px;
 }
