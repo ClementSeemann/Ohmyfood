@@ -92,6 +92,7 @@ header {
 }
 .fonctionnement li:hover {
   transform: scale(1.03);
+  color: #9356DC;
 }
 .fonctionnement li i {
   margin-right: 15px;
@@ -99,14 +100,16 @@ header {
 
 .menu {
   background-color: #f6f6f6;
+  margin: 50px;
 }
 .menu h2 {
   padding-top: 20px;
 }
 .menu .menu-cards {
   display: flex;
-  align-items: center;
+  justify-content: center;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   gap: 32px;
 }
@@ -114,6 +117,21 @@ header {
   .menu .menu-cards {
     flex-direction: column;
   }
+}
+.menu .menu-cards .new {
+  position: relative;
+}
+.menu .menu-cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 20px;
+  width: 70px;
+  background-color: #99E2D0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 10px;
+  top: 10px;
 }
 .menu .card {
   border: 1px solid #f6f6f6;
@@ -123,13 +141,31 @@ header {
   box-shadow: 2px 1px 6px -3px black;
 }
 .menu .card img {
-  height: 150px;
-  width: 250px;
+  height: 250px;
+  width: 500px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .menu .card .card-contents {
   color: black;
+  margin-left: 10px;
+  position: relative;
+}
+.menu .card .card-contents i {
+  font-size: 24px;
+  position: absolute;
+  right: 16px;
+  top: 0;
+}
+
+footer {
+  background-color: #242526;
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  padding-left: 26px;
+  padding-top: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

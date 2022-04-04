@@ -1,0 +1,10 @@
+@import "../utils/colors.scss";
+footer{
+    background-color: $lightblack;
+    color: white;
+    h3{
+        font-family: "Shrikhand";
+        padding-left: 26px;
+        padding-top: 16px;
+    }
+}

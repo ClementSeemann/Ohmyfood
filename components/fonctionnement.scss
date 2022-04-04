@@ -37,6 +37,7 @@
         }
         &:hover{
             @include zoomhover;
+            color: $purple;
         }
         & i{
             margin-right: 15px;
