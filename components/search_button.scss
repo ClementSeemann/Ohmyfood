@@ -3,7 +3,9 @@
 @import "../utils/colors.scss";
 .search{ 
     text-align: center;
-    margin-top: 24px;
+    margin-top: -20px;
+    padding-top: 14px;
+    padding-bottom: 32px;
     background-color: $grey;
     & button{
         background-image: linear-gradient($pink, $purple);
