@@ -46,7 +46,7 @@ header {
   padding: 16px 32px;
   border: none;
   border-radius: 30px;
-  box-shadow: 2px 1px 8px -3px black;
+  box-shadow: 2px 1px 6px -3px black;
 }
 .search button:hover {
   transform: scale(1.03);
@@ -72,7 +72,7 @@ header {
   flex-grow: 1;
   border: 1px solid #f6f6f6;
   border-radius: 15px;
-  box-shadow: 2px 1px 8px -3px black;
+  box-shadow: 2px 1px 6px -3px black;
   position: relative;
 }
 .fonctionnement li::before {
@@ -101,18 +101,35 @@ header {
   background-color: #f6f6f6;
 }
 .menu h2 {
-  margin-bottom: 32px;
+  padding-top: 20px;
 }
 .menu .menu-cards {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 32px;
 }
-.menu .cards {
-  border: 1px solid black;
-  height: 60px;
-  flex-grow: 1;
-  min-width: 500px;
+@media (max-width: 980px) {
+  .menu .menu-cards {
+    flex-direction: column;
+  }
+}
+.menu .card {
+  border: 1px solid #f6f6f6;
+  border-radius: 15px 15px 15px 15px;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 2px 1px 6px -3px black;
+}
+.menu .card img {
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.menu .card .card-contents {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
