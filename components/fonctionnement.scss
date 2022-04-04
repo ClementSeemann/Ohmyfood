@@ -3,6 +3,7 @@
 @import "../utils/colors.scss";
 .fonctionnement{
     counter-reset: steps;
+    margin-bottom: 32px;
     & ol{
         display: flex;
         gap: 24px;

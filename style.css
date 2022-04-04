@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0px;
+main {
   font-family: "Roboto", sans-serif;
+  margin: 0px 16px;
 }
 
 h1 {
@@ -54,6 +54,7 @@ header {
 
 .fonctionnement {
   counter-reset: steps;
+  margin-bottom: 32px;
 }
 .fonctionnement ol {
   display: flex;
@@ -94,6 +95,24 @@ header {
 }
 .fonctionnement li i {
   margin-right: 15px;
+}
+
+.menu {
+  background-color: #f6f6f6;
+}
+.menu h2 {
+  margin-bottom: 32px;
+}
+.menu .menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.menu .cards {
+  border: 1px solid black;
+  height: 60px;
+  flex-grow: 1;
+  min-width: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
