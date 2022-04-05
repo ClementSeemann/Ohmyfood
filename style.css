@@ -160,21 +160,28 @@ header {
   position: absolute;
   right: 16px;
   top: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 footer {
-  background-color: #242526;
+  background-color: #353535;
   color: white;
+  padding: 0 24px;
+  margin-top: -40px;
+  margin-bottom: -20px;
+}
+footer i {
+  padding: 0 12px;
 }
 footer h3 {
-  font-family: "Shrikhand";
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: "Shrikhand", sans-serif;
   font-size: 24px;
-  padding-left: 26px;
-  padding-top: 16px;
-  margin-top: -40px;
 }
-footer ul {
-  list-style-type: none;
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
