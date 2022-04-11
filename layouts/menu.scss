@@ -17,8 +17,12 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 32px;
-        @media (max-width: 980px){
+        @media (min-width: 375px){
             flex-direction: column;
+        }
+        @media (min-width: 767px){
+            flex-direction: row;
+            justify-content: space-around;
         }
         .new{
             position: relative;
@@ -44,7 +48,7 @@
         @include shadow;
         & img{
             height: 250px;
-            width: 600px;
+            width: 400px;
             object-fit: cover;
             border-radius: 15px 15px 0 0;
         }
@@ -52,12 +56,25 @@
             color: black;
             margin-left: 10px;
             position: relative;
-            & i{
+            & .far{
                 font-size: 24px;
                 position: absolute;
                 right: 16px;
                 top: 0;
-                background-image: linear-gradient($pink, $purple);
+                background-color: transparent;
+                color: black;
+            }
+            & .fas{
+                font-size: 24px;
+                position: absolute;
+                right: 16px;
+                top: 0;
+                background-color: transparent;
+                color: $pink;
+                opacity: 0%;
+                &:hover{
+                    opacity: 100%;
+                }
             }
         }
     }

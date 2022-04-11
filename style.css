@@ -34,7 +34,6 @@ header {
 
 .search {
   text-align: center;
-  margin-top: -20px;
   padding-top: 14px;
   padding-bottom: 32px;
   background-color: #f6f6f6;
@@ -117,9 +116,15 @@ header {
   flex-wrap: wrap;
   gap: 32px;
 }
-@media (max-width: 980px) {
+@media (min-width: 375px) {
   .menu .menu-cards {
     flex-direction: column;
+  }
+}
+@media (min-width: 767px) {
+  .menu .menu-cards {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 .menu .menu-cards .new {
@@ -146,7 +151,7 @@ header {
 }
 .menu .card img {
   height: 250px;
-  width: 600px;
+  width: 400px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
@@ -155,12 +160,25 @@ header {
   margin-left: 10px;
   position: relative;
 }
-.menu .card .card-contents i {
+.menu .card .card-contents .far {
   font-size: 24px;
   position: absolute;
   right: 16px;
   top: 0;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-color: transparent;
+  color: black;
+}
+.menu .card .card-contents .fas {
+  font-size: 24px;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  background-color: transparent;
+  color: #FF79DA;
+  opacity: 0%;
+}
+.menu .card .card-contents .fas:hover {
+  opacity: 100%;
 }
 
 footer {

@@ -3,7 +3,6 @@
 @import "../utils/colors.scss";
 .search{ 
     text-align: center;
-    margin-top: -20px;
     padding-top: 14px;
     padding-bottom: 32px;
     background-color: $grey;
@@ -20,5 +19,4 @@
             @include zoomhover
         }
     }
-    
 }
