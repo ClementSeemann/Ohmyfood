@@ -1,10 +1,14 @@
-@import "./base/base.scss";
-@import "./layouts/header.scss";
-@import "./layouts/belleville.scss";
-@import "./components/search_button.scss";
-@import "./components/fonctionnement.scss";
-@import "./layouts/menu.scss";
-@import "./layouts/footer.scss";
+@import "./sass/base/base.scss";
+@import "./sass/layouts/header.scss";
+@import "./sass/layouts/belleville.scss";
+@import "./sass/components/search_button.scss";
+@import "./sass/components/fonctionnement.scss";
+@import "./sass/layouts/menu.scss";
+@import "./sass/layouts/footer.scss";
+@import "./sass/pages/restaurants.scss";
+@import "./sass/components/command_button.scss";
+
+
 
 
 

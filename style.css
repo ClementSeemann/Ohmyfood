@@ -189,17 +189,138 @@ footer {
   margin-bottom: -20px;
 }
 footer i {
-  padding: 0 12px;
+  font-size: 14px;
+  margin-right: 10px;
 }
 footer h3 {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 16px;
+  padding-left: 2px;
   font-family: "Shrikhand", sans-serif;
   font-size: 24px;
 }
 footer a {
   text-decoration: none;
   color: white;
+}
+
+.arrow {
+  display: flex;
+}
+
+.banner img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  background-color: #f6f6f6;
+  margin-top: -50px;
+  border-radius: 20px 20px 0 0;
+}
+.container h2 {
+  font-family: "Shrikhand", sans-serif;
+  margin-left: 15px;
+  padding: 8px;
+  padding-top: 28px;
+  margin-bottom: -10px;
+}
+.container .far {
+  font-size: 24px;
+  margin-right: 12px;
+  margin-top: 28px;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  background-color: transparent;
+  color: black;
+}
+.container .fas {
+  font-size: 24px;
+  margin-right: 12px;
+  margin-top: 28px;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  background-color: transparent;
+  color: #FF79DA;
+  opacity: 0%;
+}
+.container .fas:hover {
+  opacity: 100%;
+}
+
+.flex {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
+  margin-top: -20px;
+  padding: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.list h3 {
+  font-weight: lighter;
+  padding-top: 10px;
+  margin-bottom: -4px;
+  text-decoration: underline;
+  text-decoration-color: #99E2D0;
+  text-underline-position: 10px;
+}
+.list .list-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 8px;
+  background-color: white;
+  border-radius: 20px;
+}
+.list .list-cards h4 {
+  font-size: 18px;
+  margin-top: 2px;
+}
+.list .list-cards p {
+  margin-top: -12px;
+  font-size: 16px;
+  margin-bottom: -16px;
+}
+.list .list-cards strong {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 4px;
+  margin-right: 16px;
+}
+
+footer {
+  margin-top: -24px;
+}
+
+.command {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 32px;
+  background-color: #f6f6f6;
+}
+.command .command_button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px 48px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 1px 6px -3px black;
+}
+.command .command_button:hover {
+  transform: scale(1.03);
 }
 
 /*# sourceMappingURL=style.css.map */
