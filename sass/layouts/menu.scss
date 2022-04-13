@@ -1,5 +1,6 @@
 @import "../utils/colors.scss";
 @import "../utils/boxshadow.scss";
+@import "../utils/gradient.scss";
 
 .menu{
     background-color: $grey; 
@@ -71,6 +72,7 @@
                 top: 0;
                 background-color: transparent;
                 color: $pink;
+                @include colorgradient;
                 opacity: 0%;
                 &:hover{
                     opacity: 100%;
