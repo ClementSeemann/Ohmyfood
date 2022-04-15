@@ -116,12 +116,13 @@ header {
   flex-wrap: wrap;
   gap: 32px;
 }
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .menu .menu-cards {
     flex-direction: column;
+    width: auto;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) and (max-width: 980px) {
   .menu .menu-cards {
     flex-direction: row;
     justify-content: space-around;
@@ -149,9 +150,12 @@ header {
   background-color: white;
   box-shadow: 2px 1px 6px -3px black;
 }
+.menu .card:hover {
+  transform: scale(1.03);
+}
 .menu .card img {
   height: 250px;
-  width: 400px;
+  width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
@@ -174,8 +178,7 @@ header {
   right: 16px;
   top: 0;
   background-color: transparent;
-  color: #FF79DA;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: linear-gradient(#FF79DA, #9356DC);
   opacity: 0%;
 }
 .menu .card .card-contents .fas:hover {
@@ -302,10 +305,14 @@ footer a {
   margin-bottom: -16px;
 }
 .list .list-cards strong {
-  display: flex;
-  justify-content: end;
-  padding-bottom: 4px;
-  margin-right: 16px;
+  margin-left: auto;
+  font-weight: bold;
+}
+.list .list-cards .list-cards-check {
+  margin-left: auto;
+  border: 1px solid #ebebeb;
+  background-color: #99E2D0;
+  height: 100%;
 }
 
 .command {

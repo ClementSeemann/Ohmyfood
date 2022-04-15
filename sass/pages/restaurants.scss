@@ -83,6 +83,7 @@
         @include shadow;
         &:hover{
             @include zoomhover;
+
         }
         & h4{
             font-size: 18px;
@@ -94,11 +95,15 @@
             margin-bottom: -16px;
         }
         & strong{
-            display: flex;
-            justify-content: end;
-            padding-bottom: 4px;
-            margin-right: 16px;
             
+            margin-left: auto;
+            font-weight: bold;
+        }
+        & .list-cards-check{
+            margin-left: auto;
+            border: 1px solid $greyhard;
+            background-color: $greenmint;
+            height: 100%;
         }
     }
 }
