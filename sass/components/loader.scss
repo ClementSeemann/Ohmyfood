@@ -1,0 +1,30 @@
+@import"../utils/colors.scss";
+
+.loader{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: $grey;
+    opacity: 0.7;
+    animation: off 10ms;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    & i{
+        font-size: 120px;
+        color: $purple;
+    }
+}
+
+@keyframes off{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}

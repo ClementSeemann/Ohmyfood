@@ -390,4 +390,33 @@ footer a {
   transform: scale(1.03);
 }
 
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #f6f6f6;
+  opacity: 0.7;
+  animation: off 10ms;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.loader i {
+  font-size: 120px;
+  color: #9356DC;
+}
+
+@keyframes off {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
