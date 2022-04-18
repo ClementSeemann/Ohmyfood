@@ -1,6 +1,7 @@
 @import "../utils/boxshadow.scss";
 @import "../utils/colors.scss";
 @import "../utils/zoomhover.scss";
+@import "../utils/animation.scss";
 
 .arrow{
         position: absolute;
@@ -73,6 +74,11 @@
         text-underline-position: 10px;
     }
     & .list-cards{
+        @for $i from 1 through 10{
+            &:nth-child(#{$i}){
+                animation-delay: 100ms*$i;
+            }
+        }
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -81,9 +87,17 @@
         background-color: white;
         border-radius: 20px;
         @include shadow;
+        overflow: hidden;
+        animation: appear 1.5s;
+        animation-fill-mode: both;
         &:hover{
             @include zoomhover;
-
+            &:hover .list-cards-check{
+                margin-right: 0;
+            }
+            &:hover strong{
+                margin-left: 80%;
+            }
         }
         & h4{
             font-size: 18px;
@@ -92,18 +106,22 @@
         & p{
             margin-top: -12px;
             font-size: 16px;
-            margin-bottom: -16px;
+            margin-bottom: -20px;
         }
         & strong{
-            
-            margin-left: auto;
+            margin-left: 90%;
             font-weight: bold;
+            transition: margin-left 0.5s;
         }
         & .list-cards-check{
             margin-left: auto;
+            margin-right: -54px;
+            transition: margin-right 0.5s;
+            & p{
             border: 1px solid $greyhard;
             background-color: $greenmint;
-            height: 100%;
+            border-radius: 0 15px 15px 0;
+            }
         }
     }
 }
