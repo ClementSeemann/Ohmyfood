@@ -71,7 +71,6 @@
         margin-bottom: -4px;
         text-decoration: underline;
         text-decoration-color: $greenmint;
-        text-underline-position: 10px;
     }
     & span{
         position: absolute;
@@ -90,7 +89,7 @@
             place-items: center;
             background-color: white;
             width: 24px;
-            aspect-ratio: 1;
+            aspect-ratio: 1/1;
             border-radius: 16px;
             color: $greenmint;
         }
