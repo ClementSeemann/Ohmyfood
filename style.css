@@ -100,6 +100,40 @@ header {
   margin-right: 15px;
 }
 
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glissement {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 .menu {
   background-color: #f6f6f6;
   padding-bottom: 100px;
@@ -161,9 +195,6 @@ header {
   background-color: white;
   box-shadow: 2px 1px 6px -3px black;
 }
-.menu .card:hover {
-  transform: scale(1.03);
-}
 .menu .card img {
   height: 250px;
   width: 100%;
@@ -176,7 +207,7 @@ header {
   position: relative;
 }
 .menu .card .card-contents .far {
-  font-size: 24px;
+  font-size: 30px;
   position: absolute;
   right: 16px;
   top: 0;
@@ -184,16 +215,18 @@ header {
   color: black;
 }
 .menu .card .card-contents .fas {
-  font-size: 24px;
+  font-size: 30px;
   position: absolute;
   right: 16px;
   top: 0;
-  background-color: transparent;
-  color: #FF79DA;
-  opacity: 0%;
+  opacity: 0;
 }
 .menu .card .card-contents .fas:hover {
-  opacity: 100%;
+  animation: heart 0.25s;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
 }
 
 footer {
@@ -230,10 +263,26 @@ footer a {
 }
 @keyframes spin {
   0% {
-    transform: rotate(-270deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes glissement {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.1);
   }
 }
 .arrow {
@@ -283,10 +332,14 @@ footer a {
   top: 0;
   background-color: transparent;
   color: #FF79DA;
-  opacity: 0%;
+  opacity: 0;
 }
 .container .fas:hover {
-  opacity: 100%;
+  animation: heart 0.25s;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
 }
 
 .flex {
@@ -395,6 +448,7 @@ footer a {
   margin-top: -12px;
   font-size: 16px;
   margin-bottom: -20px;
+  animation: glissement 0.5s;
 }
 .list .list-cards strong {
   margin-left: auto;

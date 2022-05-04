@@ -47,9 +47,13 @@
         top: 0;
         background-color: transparent;
         color: $pink;
-        opacity: 0%;
+        opacity: 0;
         &:hover{
-            opacity: 100%;
+            animation: heart 0.25s;
+            background: linear-gradient($pink,$purple);
+            -webkit-background-clip: text;
+            color: transparent;
+            opacity: 1;
         }
     }
 }
@@ -131,6 +135,7 @@
             margin-top: -12px;
             font-size: 16px;
             margin-bottom: -20px;
+            animation: glissement 0.5s;
         }
         & strong{
             margin-left: auto;
