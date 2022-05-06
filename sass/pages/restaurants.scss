@@ -119,12 +119,18 @@
             @include zoomhover;
             &:hover span{
                 left: 88%;
+                
                 & i{
                     animation: spin 0.75s;
                 }
             }
             &:hover strong{
-                margin-left: 78%;
+                animation: glissement 0.75s;
+                animation-fill-mode: both;
+            }
+            &:hover .list-cards-text{
+                animation: textgliss 0.75s;
+                animation-fill-mode: both;
             }
         }
         & h4{
@@ -135,7 +141,6 @@
             margin-top: -12px;
             font-size: 16px;
             margin-bottom: -20px;
-            animation: glissement 0.5s;
         }
         & strong{
             margin-left: auto;

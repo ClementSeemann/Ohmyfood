@@ -120,10 +120,17 @@ header {
 }
 @keyframes glissement {
   0% {
-    width: 100%;
+    margin-left: 100%;
   }
   100% {
-    width: 40%;
+    margin-left: 75%;
+  }
+}
+@keyframes textgliss {
+  100% {
+    margin-right: 30%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 @keyframes heart {
@@ -271,10 +278,17 @@ footer a {
 }
 @keyframes glissement {
   0% {
-    width: 100%;
+    margin-left: 100%;
   }
   100% {
-    width: 40%;
+    margin-left: 75%;
+  }
+}
+@keyframes textgliss {
+  100% {
+    margin-right: 30%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 @keyframes heart {
@@ -438,7 +452,12 @@ footer a {
   animation: spin 0.75s;
 }
 .list .list-cards:hover:hover strong {
-  margin-left: 78%;
+  animation: glissement 0.75s;
+  animation-fill-mode: both;
+}
+.list .list-cards:hover:hover .list-cards-text {
+  animation: textgliss 0.75s;
+  animation-fill-mode: both;
 }
 .list .list-cards h4 {
   font-size: 18px;
@@ -448,7 +467,6 @@ footer a {
   margin-top: -12px;
   font-size: 16px;
   margin-bottom: -20px;
-  animation: glissement 0.5s;
 }
 .list .list-cards strong {
   margin-left: auto;
