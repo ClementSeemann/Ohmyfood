@@ -116,20 +116,22 @@
         animation: appear 1.5s;
         animation-fill-mode: both;
         &:hover{
-            @include zoomhover;
-            &:hover span{
+            span{
                 left: 88%;
-                
-                & i{
-                    animation: spin 0.75s;
-                }
             }
-            &:hover strong{
+            i{
+                animation: spin 0.75s;
+                }
+            strong{
                 animation: glissement 0.75s;
                 animation-fill-mode: both;
             }
-            &:hover .list-cards-text{
+            .list-cards-text{
                 animation: textgliss 0.75s;
+                animation-fill-mode: both;
+            }
+            .text-ellipsis{
+                animation: elips 0.75s;
                 animation-fill-mode: both;
             }
         }
@@ -148,4 +150,10 @@
             transition: margin-left 0.5s;
         }
     }
+}
+.text-ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 300px;
 }

@@ -126,11 +126,18 @@ header {
     margin-left: 75%;
   }
 }
-@keyframes textgliss {
+@keyframes elips {
+  0% {
+    width: 300px;
+  }
+  40% {
+    width: 260px;
+  }
+  80% {
+    width: 230px;
+  }
   100% {
-    margin-right: 30%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    width: 200px;
   }
 }
 @keyframes heart {
@@ -284,11 +291,18 @@ footer a {
     margin-left: 75%;
   }
 }
-@keyframes textgliss {
+@keyframes elips {
+  0% {
+    width: 300px;
+  }
+  40% {
+    width: 260px;
+  }
+  80% {
+    width: 230px;
+  }
   100% {
-    margin-right: 30%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    width: 200px;
   }
 }
 @keyframes heart {
@@ -442,21 +456,22 @@ footer a {
 .list .list-cards:nth-child(10) {
   animation-delay: 1000ms;
 }
-.list .list-cards:hover {
-  transform: scale(1.03);
-}
-.list .list-cards:hover:hover span {
+.list .list-cards:hover span {
   left: 88%;
 }
-.list .list-cards:hover:hover span i {
+.list .list-cards:hover i {
   animation: spin 0.75s;
 }
-.list .list-cards:hover:hover strong {
+.list .list-cards:hover strong {
   animation: glissement 0.75s;
   animation-fill-mode: both;
 }
-.list .list-cards:hover:hover .list-cards-text {
+.list .list-cards:hover .list-cards-text {
   animation: textgliss 0.75s;
+  animation-fill-mode: both;
+}
+.list .list-cards:hover .text-ellipsis {
+  animation: elips 0.75s;
   animation-fill-mode: both;
 }
 .list .list-cards h4 {
@@ -472,6 +487,13 @@ footer a {
   margin-left: auto;
   font-weight: bold;
   transition: margin-left 0.5s;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 300px;
 }
 
 .command {
