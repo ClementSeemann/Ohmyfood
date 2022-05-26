@@ -126,6 +126,14 @@ header {
     margin-left: 75%;
   }
 }
+@keyframes glissement2 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 86%;
+  }
+}
 @keyframes elips {
   0% {
     width: 300px;
@@ -289,6 +297,14 @@ footer a {
   }
   100% {
     margin-left: 75%;
+  }
+}
+@keyframes glissement2 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 86%;
   }
 }
 @keyframes elips {
@@ -458,6 +474,8 @@ footer a {
 }
 .list .list-cards:hover span {
   left: 88%;
+  animation: glissement2 0.75s;
+  animation-fill-mode: both;
 }
 .list .list-cards:hover i {
   animation: spin 0.75s;

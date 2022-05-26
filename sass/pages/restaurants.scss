@@ -118,8 +118,11 @@
         &:hover{
             span{
                 left: 88%;
+                animation: glissement2 0.75s;
+                animation-fill-mode: both;
             }
             i{
+                
                 animation: spin 0.75s;
                 }
             strong{
